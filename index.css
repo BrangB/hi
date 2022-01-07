@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Outfit&family=Roboto:wght@100;400;500&family=Source+Sans+3&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.fzNav{
+    font-size: 30px;
+}
+.fzitem{
+    font-size: 20px;
+}
+.container{
+    max-width: 1350px;
+    height: 100vh;
+}
+.navbar{
+    background-color: rgba(255, 255, 255, 0.568);
+}
+#section1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section2{
+    background-color: green;
+}
+.cards{
+    width: 190px;
+    height: 190px;
+    background-color: pink;
+    position: relative;
+
+    border-radius: 50%;
+
+    top: 10px;
+    position: relative;
+    transition: 0.6s;
+}
+.cards img{
+    padding: 0;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 3px solid black;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: relative;
+    
+    transition: 0.2s;
+}
+.cards .content{
+    color: black;
+    display: none;
+    position: absolute;
+}
+.cards p{
+    margin-top: 12px;
+}
+.cards:hover {
+    width: 500px;
+    height: 250px;
+    background-color: pink;
+    border-radius: 12px;
+}
+.cards:hover img{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 3px solid white;
+    top: 10%;
+    left: -20%;
+}
+.cards:hover .content{
+    display: block;
+    top: 10%;
+    left: 22%;
+}
+.cards i{
+    font-size: 20px;
+    margin: 10px 5px;
+}
+@media (max-width:700px){
+    .cards:hover{
+        width:90%;
+        height: 270px;
+    }
+    .cards:hover img{
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-130%);
+    }
+    .cards:hover .content{
+        left: 5%;
+        right: 5%;
+        top: 15%;
+    }
+}

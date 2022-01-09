@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Outfit&family=Roboto:wght@100;400;500&family=Source+Sans+3&display=swap');
-*{
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway&family=Roboto:wght@100;400;500&family=Vujahday+Script&display=swap');    
+*{    padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
@@ -8,8 +7,18 @@
 html{
     scroll-behavior: smooth;
 }
+.navbar{
+    padding: 4px 30px;
+}
 .fzNav{
-    font-size: 30px;
+    font-size: 40px;
+    font-family: 'Vujahday Script', cursive;
+}
+.fzNav:hover{
+    font-size: 40px;
+    font-family: 'Vujahday Script', cursive;
+    animation: animatelogo 2s linear forwards;
+    -webkit-box-reflect: below -30px linear-gradient(transparent , rgba(0, 0, 0, 0.226));
 }
 .fzitem{
     font-size: 20px;
@@ -18,87 +27,135 @@ html{
     max-width: 1350px;
     height: 100vh;
 }
-.navbar{
-    background-color: rgba(255, 255, 255, 0.568);
+.Input{
+    background-color: transparent;
+    color: rgb(167, 167, 167);
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+    height: 35px;
+    font-size: 16px;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    -webkit-box-reflect: below 1px linear-gradient(transparent , rgba(0, 0, 0, 0.226));
+}
+.Input:hover{
+    background-color: transparent;
+    color: rgb(167, 167, 167);
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+    height: 35px;
+    font-size: 16px;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    -webkit-box-reflect: below 1px linear-gradient(transparent , rgba(0, 0, 0, 0.349));
+    animation: animate 2s linear forwards;
+}
+.Input::placeholder{
+    color: rgb(167, 167, 167);
+}
+.Btn{
+    background-color: transparent;
+    color: rgb(167, 167, 167);
+    padding: 2px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 5px;
+    width: 70px;
+    height: 35px;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    -webkit-box-reflect: below 1px linear-gradient(transparent , rgba(0, 0, 0, 0.349));
+
+}
+.Btn:hover{
+    background-color: transparent;
+    color: white;
+    padding: 2px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 5px;
+    width: 70px;
+    height: 35px;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    animation: animate 2s linear forwards;
+}
+.nav-link{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+}
+@keyframes animatelogo {
+    0%,40%,44%,48%{
+        color: white;
+        text-shadow: none;
+    }
+    10%,39%,42%,46%,50%,100%{
+    color: white;
+    text-shadow: 0 0 10px #00c3ff,
+                0 0 20px #00c3ff,
+                0 0 30px #00c3ff,
+                0 0 40px #00c3ff;
+    }
+}
+@keyframes animate {
+    0%,40%,44%,48%{
+        color: rgb(167, 167, 167);
+        border: 1px solid rgb(167, 167, 167);
+        box-shadow: none;
+
+    }
+    10%,39%,42%,46%,50%,100%{
+    color: white;
+    box-shadow: 0 0 10px #03bcf4,
+                0 0 15px #03bcf4,
+                0 0 20px #03bcf4,
+                0 0 25px #03bcf4;
+    text-shadow: 0 0 10px #03bcf4,
+                0 0 15px #03bcf4;
+    border: 2px solid white;
+    }
+    
+}
+.slider1{
+    position: absolute;
+    background-color: #03bcf4;
+    width: 30px;
+    height: 2px;
+    left: 400px;
+    top: 53px;
+    transition: .5s;
+}
+.slider2{
+    position: absolute;
+    background-color: #03bcf4;
+    width: 30px;
+    height: 2px;
+    left: 390px;
+    top: 60px;
+    transition: .7s;
 }
 #section1{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color : black;
+
+}
+#section1 img{
+    -webkit-box-reflect: below -120px linear-gradient(transparent 50% , rgba(0, 0, 0, 0.267));
 }
 #section2{
-    background-color: green;
+    background-color: lightblue;
 }
-.cards{
-    width: 190px;
-    height: 190px;
-    background-color: pink;
-    position: relative;
-
-    border-radius: 50%;
-
-    top: 10px;
-    position: relative;
-    transition: 0.6s;
-}
-.cards img{
-    padding: 0;
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
-    border: 3px solid black;
-    object-fit: cover;
-    left: 0;
-    right: 0;
-    top: 0;
-    position: relative;
-    
-    transition: 0.2s;
-}
-.cards .content{
-    color: black;
-    display: none;
-    position: absolute;
-}
-.cards p{
-    margin-top: 12px;
-}
-.cards:hover {
-    width: 500px;
-    height: 250px;
-    background-color: pink;
-    border-radius: 12px;
-}
-.cards:hover img{
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
-    border: 3px solid white;
-    top: 10%;
-    left: -20%;
-}
-.cards:hover .content{
-    display: block;
-    top: 10%;
-    left: 22%;
-}
-.cards i{
-    font-size: 20px;
-    margin: 10px 5px;
-}
-@media (max-width:700px){
-    .cards:hover{
-        width:90%;
-        height: 270px;
+@media (max-width : 600px) {
+    #section1 img{
+        -webkit-box-reflect: below -90px linear-gradient(transparent 50% , rgba(0, 0, 0, 0.315));
+        width: 470px;
     }
-    .cards:hover img{
-        left: 50%;
-        top:50%;
-        transform: translate(-50%,-130%);
-    }
-    .cards:hover .content{
-        left: 5%;
-        right: 5%;
-        top: 15%;
+    .slider {
+        display: none;
     }
 }

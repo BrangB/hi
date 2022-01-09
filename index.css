@@ -150,7 +150,7 @@ html{
 #section2{
     background-color: lightblue;
 }
-@media (max-width : 600px) {
+@media (max-width : 700px) {
     #section1 img{
         -webkit-box-reflect: below -90px linear-gradient(transparent 50% , rgba(0, 0, 0, 0.315));
         width: 470px;

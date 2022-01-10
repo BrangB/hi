@@ -148,21 +148,13 @@ html{
     -webkit-box-reflect: below -120px linear-gradient(transparent 50% , rgba(0, 0, 0, 0.431));
 }
 .secondslide{
-    width: 450px;
+    width: 400px;
     -webkit-box-reflect: below -150px linear-gradient(transparent 50% , rgba(0, 0, 0, 0.431));
 }
 #section2{
     background-color: lightblue;
 }
-@media (max-width : 1100px) {
-    #section1 img{
-        -webkit-box-reflect: below -90px linear-gradient(transparent 50% , rgba(0, 0, 0, 0.315));
-        width: 480px;
-    }
-    .slider {
-        display: none;
-    }
-}
+
 
 /* loaderAnimation */
 /* .loader{
@@ -212,21 +204,21 @@ html{
     width: 400px;
     height: 120px;
 }
-.header h1{
-    font-size: 100px;
-    letter-spacing: 3px;
-    font-family: 'Abril Fatface', cursive;
-
-}
 .dec1{
     position: absolute;
     color: #03bcf4;
     animation: waterflow 4s ease-in-out infinite;
+    font-size: 100px;
+    letter-spacing: 3px;
+    font-family: 'Abril Fatface', cursive;
 }
 .dec2{
     position: absolute;
     color: transparent;
     -webkit-text-stroke: 2px #03bcf4;
+    font-size: 100px;
+    letter-spacing: 3px;
+    font-family: 'Abril Fatface', cursive;
 }
 @keyframes waterflow {
     0%,100%{
@@ -234,4 +226,31 @@ html{
     }
     50%{
         clip-path: polygon(0% 62%, 11% 70%, 27% 66%, 37% 62%, 43% 57%, 52% 48%, 62% 44%, 81% 48%, 88% 55%, 99% 67%, 99% 98%, 1% 99%);}
+    }
+    @media (max-width : 1100px) {  
+        .slider {
+            display: none;
+        }
+        .firstslide{
+            width: 450px;
+        }
+        .secondslide{
+            width: 250px;
+        }
+        .header{
+            margin-bottom: -30px;
+            width: 350px;
+            height: 80px;
+        }
+        .dec1{
+            font-size: 80px;
+            letter-spacing: 2px;
+            font-family: 'Abril Fatface', cursive;
+        }
+        .dec2{
+            font-size: 80px;
+            letter-spacing: 2px;
+            font-family: 'Abril Fatface', cursive;
+        }
+    
     }

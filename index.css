@@ -154,11 +154,7 @@ html{
 #section2{
     background-color: lightblue;
 }
-<<<<<<< HEAD
 @media (max-width : 1100px) {
-=======
-@media (max-width : 700px) {
->>>>>>> 9e63d1863a4d357ecdb577a630f8f7f9216ee1a6
     #section1 img{
         -webkit-box-reflect: below -90px linear-gradient(transparent 50% , rgba(0, 0, 0, 0.315));
         width: 480px;
@@ -167,7 +163,6 @@ html{
         display: none;
     }
 }
-<<<<<<< HEAD
 
 /* loaderAnimation */
 /* .loader{
@@ -240,5 +235,3 @@ html{
     50%{
         clip-path: polygon(0% 74%, 19% 65%, 40% 58%, 58% 64%, 72% 68%, 87% 68%, 97% 64%, 99% 100%, 1% 100%);    }
 }
-=======
->>>>>>> 9e63d1863a4d357ecdb577a630f8f7f9216ee1a6

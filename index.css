@@ -8,6 +8,7 @@ html{
 }
 .navbar{
     padding: 4px 30px;
+    position: sticky;
 }
 .fzNav{
     font-size: 40px;
@@ -151,10 +152,6 @@ html{
     width: 400px;
     -webkit-box-reflect: below -150px linear-gradient(transparent 50% , rgba(0, 0, 0, 0.431));
 }
-#section2{
-    background-color: lightblue;
-}
-
 
 /* loaderAnimation */
 /* .loader{
@@ -211,6 +208,7 @@ html{
     font-size: 100px;
     letter-spacing: 3px;
     font-family: 'Abril Fatface', cursive;
+    font-weight: 500;
 }
 .dec2{
     position: absolute;
@@ -219,14 +217,14 @@ html{
     font-size: 100px;
     letter-spacing: 3px;
     font-family: 'Abril Fatface', cursive;
+    font-weight: 500;
+
 }
 @keyframes waterflow {
     0%,100%{
-        clip-path: polygon(0% 49%, 19% 42%, 35% 49%, 48% 55%, 62% 55%, 77% 50%, 85% 42%, 93% 37%, 100% 38%, 99% 100%, 1% 99%);    
-    }
+        clip-path: polygon(1% 53%, 16% 47%, 33% 55%, 48% 61%, 63% 62%, 83% 58%, 100% 52%, 100% 100%, 2% 100%);    }
     50%{
-        clip-path: polygon(0% 62%, 11% 70%, 27% 66%, 37% 62%, 43% 57%, 52% 48%, 62% 44%, 81% 48%, 88% 55%, 99% 67%, 99% 98%, 1% 99%);}
-    }
+        clip-path: polygon(1% 65%, 17% 66%, 34% 67%, 52% 63%, 71% 52%, 84% 51%, 100% 53%, 100% 99%, 0% 99%);}    }
     @media (max-width : 1100px) {  
         .slider {
             display: none;
@@ -243,14 +241,18 @@ html{
             height: 80px;
         }
         .dec1{
-            font-size: 80px;
+            font-size: 70px;
             letter-spacing: 2px;
             font-family: 'Abril Fatface', cursive;
         }
         .dec2{
-            font-size: 80px;
+            font-size: 70px;
             letter-spacing: 2px;
             font-family: 'Abril Fatface', cursive;
         }
     
     }
+
+#section2{
+    background-color: black;
+}
